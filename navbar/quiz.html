@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="questions.css">
+    
+<style>
+
+#finish{
+  font-family: "Poppins",sans-serif;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(45, 109, 226);
+  float: right;
+  margin-top:  30px; 
+  border:none;
+  
+}
+
+  body{
+    margin: 0cm;
+    color: rgb(226, 238, 248);
+    background-color: rgb(226, 238, 248);
+    font-family: "Poppins",sans-serif;
+  }
+
+    
+#body{
+    width: auto;
+    height: auto;
+    background-color: rgb(226, 238, 248);
+    color: rgb(35, 48, 56);
+    padding: 10px;
+    margin-right:0px ;
+    margin-top: 60px;
+    margin-left: 60px;
+  
+}
+#body2{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(226, 238, 248);
+    margin-left: 0cm;
+    margin-right:0px ;
+    margin-top: 60px;
+
+    color: black;
+}
+.quizhead{
+  padding:10px;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: rgb(155, 158, 158) solid 1px;
+  margin-bottom: 20px;
+}
+
+.quizbody{
+  padding:10px;
+  width:70%;
+  height: auto;
+  background-color: white;
+  border: rgb(155, 158, 158) solid 1px;
+  margin-bottom: 20px;
+  z-index: 1;
+  float: left;
+}
+
+.quizaside{
+  padding:10px;
+  width: calc(30% - 55px);
+  height: auto;
+  background-color: white;
+  border: rgb(155, 158, 158) solid 1px;
+  margin-bottom: 20px;
+  float: right;
+  padding-left: 0px;
+  z-index: 1;
+  
+}
+
+
+.question{
+    width:calc(100% - 130px);
+    margin: 5px;
+    padding: 10px;
+height: auto;
+float: right;
+background-color: rgb(177, 217, 255);
+word-wrap: break-word;
+}
+
+@media only screen and (max-width: 576px){
+
+    .quizaside{
+  padding:10px;
+  width:100%;
+  height: auto;
+  background-color: white;
+  border: rgb(155, 158, 158) solid 1px;
+  margin-bottom: 20px;
+
+  z-index: 1;
+}
+.quizbody{
+  padding:10px;
+  width:100%;
+  height: auto;
+  background-color: white;
+  border: rgb(155, 158, 158) solid 1px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+}
+
+</style>
+<script>
+let x=0;
+let y=0;
+let z=0;
+</script>
+<script>
+    function myFunction() {
+        if(x==0){
+            x=x+1;
+            demo.classList.remove("transition2");
+        demo.setAttribute("class", "transition1");
+        document.getElementById("demo").style.transform="scaleX(0)";
+        body.classList.remove("body");
+        body.setAttribute("id","body2");
+        
+        }
+        else{
+            x=x-1;
+        document.getElementById("demo").style.transform="scaleX(1)";
+        demo.classList.remove("transition1");
+    demo.setAttribute("class", "transition2");
+    body2.classList.remove("body2");
+        body2.setAttribute("id","body");
+        
+       
+        }
+      }
+      </script>
+
+    <script  src="question1.js"></script>
+      <script  src="question1.2.js"></script>
+    <script  src="question2.js"></script>
+<script  src="question2.2.js"></script>
+    <script  src="question3.2.js"></script>
+    <script  src="question3.js"></script>
+
+  
+</head>
+<body>
+    <button id="button" type="button" onclick="myFunction()"><img class="menu" src="menu.png" alt="menu"></button>
+    <ul id="demo">
+        <li><a href="#home"><img class="menu" src="menu.png" alt="menu"></a></li>
+        <li><a href="#news"><img class="menu" src="search.png" alt="menu"></a></li>
+        <li><a href="#contact"><img class="menu" src="copy.png" alt="menu"></a></li>
+        <li><a href="#about"><img class="menu" src="home.png" alt="menu"></a></li>
+      </ul>
+    <header>
+<h2>Vertical Navigation Bar</h2>
+</header>
+
+<div id="body">
+  <div class="quizhead">
+<h1>Computer Sci</h1>
+bcjkwabfjweufbewijrfber
+  </div>
+
+  <div class="quizaside">
+    <div id="count1">
+
+    </div>
+    <div id="count2">
+      
+    </div>
+    <div id="count3">
+      
+    </div>
+  </div>
+  
+  <div class="quizbody">
+
+      <div id="number">
+        <h4 id="numA">Question 1</h4>
+        <p id="num1">
+          Answer saved<br>
+          Marked out of 1.00
+        </p>
+     
+
+      </div>
+
+
+  <div class="question">
+
+    <h4>What is the worst subject </h4>
+
+    
+
+    <div class="wrong"><button class="questionbuttonwrong" type="button"
+onclick="questionFunction2()">
+ </button>Math</div>
+    <div class="wrong"><button class="questionbuttonwrong" type="button"
+    onclick="questionFunction2()">
+    </button>Comsci</div>
+
+        <div class="wrong"><button class="questionbuttonwrong" type="button"
+        onclick="questionFunction2()">
+        </button>Chem</div>
+
+        <div class="right"><button id="questionbuttonright" type="button" onclick="questionFunction();z = z+1;" >
+        </button>Valed
+        </div>
+
+
+</div>
+
+
+</div>
+
+<div class="quizbody">
+
+    <div id="number2">
+      <h4 id="numB">Question 2</h4>
+      <p id="num2">
+        Answer saved<br>
+        Marked out of 1.00
+      </p>
+   
+
+    </div>
+
+
+<div class="question">
+
+  <h4>Whats objectively the best food</h4>
+
+  <div class="right"><button id="questionbuttonright3" type="button" onclick="questionFunction3(); z = z+1; " >
+  </button> Sinigang NA BABOY (Hipon lovers can get out smh)
+  </div>
+
+  <div class="wrong"><button class="questionbuttonwrong3" type="button"
+onclick="questionFunction4()">
+</button>Pizza</div>
+  <div class="wrong"><button class="questionbuttonwrong3" type="button"
+  onclick="questionFunction4()">
+  </button>Riceee is life </div>
+
+      <div class="wrong"><button class="questionbuttonwrong3" type="button"
+      onclick="questionFunction4()">
+      </button>Snackss </div>
+
+
+</div>
+
+
+</div>
+
+<div class="quizbody">
+
+  <div id="number3">
+    <h4 id="numC">Question 3</h4>
+    <p id="num3">
+          Answer saved<br>
+          Marked out of 1.00
+    </p>
+ 
+  
+  </div>
+
+
+<div class="question">
+
+<h4>What is Stephen's Favorite Color</h4>
+
+
+
+<div class="wrong"><button class="questionbuttonwrong4" type="button"
+onclick="questionFunction6(); z = z+1;; "> 
+</button>The green u see on trees</div>
+
+<div class="right"><button id="questionbuttonright4" type="button" 
+  onclick="questionFunction5()" >
+</button>An orange is a fruit of various citrus species in the family Rutaceae; it 
+primarily refers to Citrus × sinensis, which is also called sweet orange, to distinguish it from the related
+ Citrus × aurantium, referred to as bitter orange. (Wikipedia)
+</div>
+
+<div class="wrong"><button class="questionbuttonwrong4" type="button"
+onclick="questionFunction6()">
+</button>purple</div>
+
+    <div class="wrong"><button class="questionbuttonwrong4" type="button"
+    onclick="questionFunction6()"> 
+    </button>Maroon (5)</div>
+
+  
+</div>
+
+<a href="index.html"><button id="finish" type="button">Submit all and Finish</button></a>
+</div>
+
+
+  
+
+  <div id="quizfooter">
+  </div>
+
+</div>
+
+
+</body>
+
+</html>
+
+

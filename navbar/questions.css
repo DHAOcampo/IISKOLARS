@@ -1,0 +1,138 @@
+#questionbuttonright{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+    background-color: gray;
+}
+
+#questionbuttonright3{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+    background-color: grey;
+}
+
+#questionbuttonright4{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+    background-color: grey;
+}
+.questionbuttonright2{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+background-image:url('check.png');
+background-color:green!important;
+background-size: cover;
+}
+.questionbuttonwrong{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+background-color: gray;
+}
+.questionbuttonwrong3{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+background-color: gray;
+}
+
+.questionbuttonwrong4{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+background-color: gray;
+}
+
+.questionbuttonwrong2{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0pt;
+background-image:url('X.png');
+background-color: red;
+background-size: cover;
+}
+
+
+#number{
+    width: 90px;
+    height: 120px;
+    float: left;
+    background-color: rgb(211, 211, 211);
+    font-size: 12px;
+    padding: 2px;
+    border: rgb(155, 158, 158) solid 1px;
+    }
+    
+    #number2{
+    width: 90px;
+    height: 120px;
+    float: left;
+    background-color: rgb(211, 211, 211);
+    font-size: 12px;
+    padding: 2px;
+    border: rgb(155, 158, 158) solid 1px;
+    }
+
+    #number3{
+        width: 90px;
+        height: 120px;
+        float: left;
+        background-color: rgb(211, 211, 211);
+        font-size: 12px;
+        padding: 2px;
+        border: rgb(155, 158, 158) solid 1px;
+        }
+
+        #count1{
+width: 30px;
+height: 40px;
+border: 1px solid black;
+        border-radius: 10%;
+        float: left;
+        margin-left: 10px;
+        }
+        
+        #count2{
+            width: 30px;
+            height: 40px;
+            border: 1px solid black;
+                    border-radius: 10%;
+                    float: left;
+                    margin-left: 10px;
+                    }
+
+                    #count3{
+                        width: 30px;
+                        height: 40px;
+                        border: 1px solid black;
+                        border-radius: 10%;
+                    float: left;
+                    margin-left: 10px;
+                                }
