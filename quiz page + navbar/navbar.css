@@ -1,0 +1,101 @@
+header{
+    width: calc(100vw - 60px);
+    height: 60px;
+    background-color: navy;
+    position: sticky;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    float: left;
+    position: fixed;
+  float:left;
+  left: 60px;
+  top: 0px;
+  z-index: 2;
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 60px;
+  height: calc(100vh - 60px);
+  background-color: rgb(9, 92, 124);
+  position: fixed;
+  float:left;
+  left: 0px;
+  top: 60px;
+}
+
+#button{ 
+    width: 60px;
+height: 60px;
+float:left;
+position: fixed;
+  left:0px;
+  top:0px;
+  float:left;
+  background-color: rgb(18, 56, 161);
+  border:none;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+padding: 5px;
+padding-top: 15px;
+padding-bottom: 0px;
+height: 50px;
+text-align:center;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+a{
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu{
+    width: 60%;
+    height: 60%;
+}
+.transition1{
+  animation: fadeIn1 1s;
+  -webkit-animation: fadeIn1 1s;  
+  transform: scaleX(0);
+  transform-origin:left;
+}
+
+@keyframes fadeIn1{
+ from{
+ transform: scaleX(1);
+}
+ to{
+    transform:scaleX(0);
+ }
+}
+
+.transition2{
+  animation: fadeIn2 1s; 
+  -webkit-animation: fadeIn2 1s;  ;
+  transform: scaleX(1);
+  transform-origin:left;
+}
+
+@keyframes fadeIn2{
+ from{
+ transform: scaleX(0);
+}
+ to{
+    transform:scaleX(1);
+ }
+}
