@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+
+<html lang=en>
+
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "author" content = "Group 4">
+        <meta name = "section" content = "Balingkilat">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <link href='https://css.gg/bell.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>
+            IISKOLARS 
+        </title>
+        <style>
+            body {
+                margin:0px;
+            }
+
+            header {
+                display:block;
+            }
+            nav {
+                background-color:#FF604E;
+                width:100%;
+                position:fixed;
+                top:0;
+            }
+            .hubname {
+                color:black;
+                padding-top:32px;
+                padding-bottom:32px;
+                font-family: 'Josefin Sans', sans-serif;
+
+            }
+
+            .logo, .logoimage {
+                height:70px;
+            }
+            .logo {
+                padding-left:20px;
+                width:fit-content;
+            }
+            .frontpageheader {
+             padding-bottom:40px;
+            }
+
+            .loginbox {
+                background-color:aliceblue;
+                font-family: 'Josefin Sans', sans-serif;
+                padding-top:10px;
+                padding-left:20px;
+                padding-right:20px;
+                padding-bottom:10px;
+                width:fit-content;
+
+            }
+
+            .logintitle {
+   
+            }
+            .gg-bell {
+                width: 14px;
+                height: 14px;
+                position:absolute;
+                top:25px;
+                right:94px;
+            }
+            .chat {
+                width: 14px;
+                height: 14px;
+                position:absolute;
+                top:22px;
+                right:50px;
+            }
+
+            .navright, .uppernav {
+            float:left;
+            background-color:#FF604E;
+            }
+            .uppernav {
+            width: calc(100vw - 60px);
+            height: 60px;
+            position: sticky;
+            position: absolute;
+            top: 0px;
+            left: 60px;
+            float: left;
+            position: fixed;
+            float:left;
+            left: 60px;
+            top: 0px;
+            z-index: 2;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 60px;
+  height: calc(100vh - 60px);
+  background-color:#D65344;
+  position: fixed;
+  float:left;
+  left: 0px;
+  top: 60px;
+}
+
+#button{ 
+    width: 60px;
+height: 60px;
+float:left;
+position: fixed;
+  left:0px;
+  top:0px;
+  float:left;
+  background-color: #CF5D50;
+  border:none;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+padding: 5px;
+padding-top: 15px;
+padding-bottom: 0px;
+height: 50px;
+text-align:center;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+a{
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu{
+    width: 60%;
+    height: 60%;
+}
+.transition1{
+  animation: fadeIn1 1s;
+  -webkit-animation: fadeIn1 1s;  
+  transform: scaleX(0);
+  transform-origin:left;
+}
+@keyframes fadeIn1{
+ from{
+ transform: scaleX(1);
+}
+ to{
+    transform:scaleX(0);
+ }
+}
+
+.transition2{
+  animation: fadeIn2 1s; 
+  -webkit-animation: fadeIn2 1s;  ;
+  transform: scaleX(1);
+  transform-origin:left;
+}
+
+@keyframes fadeIn2{
+ from{
+ transform: scaleX(0);
+}
+ to{
+    transform:scaleX(1);
+ }
+}
+#body{
+    width: auto;
+    height: fit-content;
+    background-color: rgb(204, 223, 238);
+    color: rgb(35, 48, 56);
+    padding: 10px;
+    margin-right:0px ;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.hpageheader {
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: #eef5f9;
+    border: 1px solid #d7dfe3;
+}
+.announcements {
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: #eef5f9;
+    border-top: solid 2px #FF604E!important;
+    border: 1px solid #d7dfe3;
+    margin-bottom: 1rem!important;
+    margin-top: 1rem!important;
+}
+.caccessed {
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: #eef5f9;
+    border-top: solid 2px #FF604E!important;
+    border: 1px solid #d7dfe3;
+    margin-bottom: 1rem!important;
+    margin-top: 1rem!important;
+    text-align:center;
+}
+.cdashboard {
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: #eef5f9;
+    border-top: solid 2px #FF604E!important;
+    border: 1px solid #d7dfe3;
+    margin-bottom: 1rem!important;
+    margin-top: 1rem!important;
+    text-align:center;
+}
+.cardi {
+    background-position: center;
+    height: 20rem;
+    width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+}
+.imgc {
+    
+    background-image: url(https://khub.clc.pshs.edu.ph/pluginfile.php/43858/course/overviewfiles/balingkilat.png);
+}
+
+.text {
+    height:8rem!important;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <nav class="navright">
+            <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
+            <ul id="demo">
+                <li><a href="#home"><i class="material-icons menu">home</i></a></li>
+                <li><a href="#news"><i class="material-icons menu">search</i></a></li>
+                <li><a href="#info"><i class="material-icons menu">info</i></a></li>
+                <li><a href="#courses"><i class="fa fa-graduation-cap"></i></a></li>
+            </ul>
+            <header class="uppernav">
+                <div class="logo">
+                    <img class="logoimage" alt="logo" src="logoiiskolars.png">
+                </div>
+                <i class="gg-bell"></i>
+                <i class="material-icons chat">chat_bubble_outline</i>
+            </header>
+        </nav>
+        <div class="main" id="body">
+            <header class="hpageheader">
+                <h1>BALINGKILAT GROUP 4</h1>
+            </header>
+            <article class="announcements">
+                <h1>
+                    &nbsp
+                </h1>
+                <p>No announcements</p>
+            </article>
+            <section class="caccessed">
+                <h1>
+                    Recently Accessed Courses
+                </h1>
+               
+            </section>
+            <aside class="cdashboard">
+                <h1>
+                    Course Overview
+                </h1>
+                <a href="#"><div class="cardi imgc comsci">
+                    &nbsp;
+                </div>
+                <div class="cardi text comsci">
+                    <p>Computer Science 3 - Balingkilat</p>
+                </div>
+            </a>
+            </aside>
+            <footer>
+
+            </footer>
+        </div>
+        
+        <script>
+            function myFunction() {
+                if(x==0){
+                    x=x+1;
+                demo.classList.remove("transition2");
+                demo.setAttribute("class", "transition1");
+                document.getElementById("demo").style.transform="scaleX(0)";
+                body.classList.remove("body");
+                body.setAttribute("id","body2");
+                
+                }
+                else{
+                    x=x-1;
+                document.getElementById("demo").style.transform="scaleX(1)";
+                demo.classList.remove("transition1");
+                demo.setAttribute("class", "transition2");
+                body2.classList.remove("body2");
+                body2.setAttribute("id","body");
+                }
+              }
+        </script>
+    </body>
+</html>
