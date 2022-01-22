@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+header {
+    display:block;
+}
+nav {
+    background-color:#FF604E;
+    width:100%;
+    position:fixed;
+    top:0;
+}
+.hubname {
+    color:black;
+    padding-top:32px;
+    padding-bottom:32px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.logo, .logoimage {
+    height:70px;
+}
+.logo {
+    padding-left:20px;
+    width:fit-content;
+}
+.frontpageheader {
+ padding-bottom:40px;
+}
+
+.loginbox {
+    background-color:aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top:10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:10px;
+    width:fit-content;
+
+}
+
+.gg-bell {
+    width: 14px;
+    height: 14px;
+    position:absolute;
+    top:25px;
+    right:94px;
+}
+.chat {
+    width: 14px;
+    height: 14px;
+    position:absolute;
+    top:22px;
+    right:50px;
+}
+
+.navright, .uppernav {
+float:left;
+background-color:#FF604E;
+}
+.uppernav {
+width: calc(100vw - 60px);
+height: 60px;
+position: sticky;
+position: absolute;
+top: 0px;
+left: 60px;
+float: left;
+position: fixed;
+float:left;
+left: 60px;
+top: 0px;
+z-index: 2;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: block;
+width: 60px;
+height: calc(100vh - 60px);
+background-color:#D65344;
+position: fixed;
+float:left;
+left: 0px;
+top: 60px;
+}
+
+#button{ 
+width: 60px;
+height: 60px;
+float:left;
+position: fixed;
+left:0px;
+top:0px;
+float:left;
+background-color: #CF5D50;
+border:none;
+
+}
+
+li a {
+display: block;
+color: #000;
+padding: 5px;
+padding-top: 15px;
+padding-bottom: 0px;
+height: 50px;
+text-align:center;
+text-decoration: none;
+}
+
+
+li a:hover {
+background-color: #555;
+color: white;
+}
+a{
+background-color: gray;
+margin-left: auto;
+margin-right: auto;
+}
+
+.menu{
+width: 60%;
+height: 60%;
+}
+.transition1{
+animation: fadeIn1 1s;
+-webkit-animation: fadeIn1 1s;  
+transform: scaleX(0);
+transform-origin:left;
+}
+@keyframes fadeIn1{
+from{
+transform: scaleX(1);
+}
+to{
+transform:scaleX(0);
+}
+}
+
+.transition2{
+animation: fadeIn2 1s; 
+-webkit-animation: fadeIn2 1s;  ;
+transform: scaleX(1);
+transform-origin:left;
+}
+
+@keyframes fadeIn2{
+from{
+transform: scaleX(0);
+}
+to{
+transform:scaleX(1);
+}
+}
+#body{
+width: calc( 100% - 80px );
+height: fit-content;
+color: rgb(35, 48, 56);
+padding: 10px;
+margin-right:0px ;
+margin-top: 60px;
+position: absolute;
+right:0px;
+top:0px;
+transition: width  1s;
+ 
+}
+
+#body2{
+    width: calc(100% - 20px);
+    height: fit-content;
+    color: rgb(35, 48, 56);
+    padding: 10px;
+    margin-right:0px ;
+    margin-top: 60px;
+    margin-left: 0px;
+    position: absolute;
+right:0px;
+top:0px;
+    transition:  width  0.9s;
+    }
+</style>
+</head>
+<body>
+    <nav class="navright">
+        <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
+        <ul id="demo">
+            <li><a href="#home"><i class="material-icons menu">home</i></a></li>
+            <li><a href="#news"><i class="material-icons menu">search</i></a></li>
+            <li><a href="#info"><i class="material-icons menu">info</i></a></li>
+            <li><a href="#courses"><i class="fa fa-graduation-cap"></i></a></li>
+        </ul>
+        <header class="uppernav">
+            <div class="logo">
+                <img class="logoimage" alt="logo" src="logoiiskolars.png">
+            </div>
+            <i class="gg-bell"></i>
+            <i class="material-icons chat">chat_bubble_outline</i>
+        </header>
+    </nav>
+<div id="body" class="thead-light">
+    <h1 style="font-family: 'Josefin Sans', sans-serif;">Grades</h1>
+    <table class="table table-bordered table-sm">
+      <thead>
+        <tr>
+          <th style="font-family: 'Josefin Sans', sans-serif;">Quiz #</th>
+          <th style="font-family: 'Josefin Sans', sans-serif;">Score</th>
+          <th style="font-family: 'Josefin Sans', sans-serif;">Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-family: 'Josefin Sans', sans-serif;">1</td>
+          <td style="font-family: 'Josefin Sans', sans-serif;">5/5</td>
+          <td style="font-family: 'Josefin Sans', sans-serif;">100%</td>
+        </tr>
+      </tbody>
+    </table>
+  
+</div>
+    
+    <script>
+    var x=0;
+    </script>
+
+    <script>
+        function myFunction() {
+            if(x==0){
+                x=x+1;
+                demo.classList.remove("transition2");
+            demo.setAttribute("class", "transition1");
+            document.getElementById("demo").style.transform="scaleX(0)";
+            body.classList.remove("body");
+            body.setAttribute("id","body2");
+            
+            }
+            else{
+                x=x-1;
+            document.getElementById("demo").style.transform="scaleX(1)";
+            demo.classList.remove("transition1");
+        demo.setAttribute("class", "transition2");
+        body2.classList.remove("body2");
+            body2.setAttribute("id","body");
+            
+           
+            }
+          }
+          </script>
+</body>
