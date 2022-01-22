@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html lang=en>
+<html lang="en">
 
     <head>
         <meta charset = "utf-8">
@@ -21,6 +21,9 @@
         <style>
             body {
                 margin:0px;
+                height:100%;
+                background-color:rgb(204, 223, 238);
+                font-family: 'Josefin Sans', sans-serif;
             }
 
             header {
@@ -40,8 +43,11 @@
 
             }
 
-            .logo, .logoimage {
+            .logo {
                 height:70px;
+            }
+            .logoimage {
+                height:65px;
             }
             .logo {
                 padding-left:20px;
@@ -182,15 +188,34 @@ a{
  }
 }
 #body{
-    width: auto;
+width: calc( 100% - 80px );
+height: fit-content;
+background-color: rgb(204, 223, 238);
+color: rgb(35, 48, 56);
+padding: 10px;
+margin-right:0px ;
+margin-top: 60px;
+position: absolute;
+right:0px;
+top:0px;
+transition: width  1s;
+}
+
+#body2{
+    width: calc(100% - 20px);
     height: fit-content;
     background-color: rgb(204, 223, 238);
     color: rgb(35, 48, 56);
     padding: 10px;
     margin-right:0px ;
     margin-top: 60px;
-    margin-left: 60px;
-}
+    margin-left: 0px;
+    position: absolute;
+    right:0px;
+    top:0px;
+    transition:  width  0.9s;
+    }
+
 .hpageheader {
     padding-bottom: 1rem!important;
     padding-top: 1rem!important;
@@ -235,22 +260,75 @@ a{
     text-align:center;
 }
 .cardi {
-    background-position: center;
-    height: 20rem;
+    height: 13rem;
     width: 800px;
     margin-left:auto;
     margin-right:auto;
     background-color:white;
+    border-radius:10px;
+    transition: box-shadow .3s;
+    margin-top:20px;
 }
-.imgc {
+.imgcomsci {
     
     background-image: url(https://khub.clc.pshs.edu.ph/pluginfile.php/43858/course/overviewfiles/balingkilat.png);
+    height:10rem;
+    background-position:center;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
 }
 
 .text {
-    height:8rem!important;
+    height:3rem;
+    font-size:24px;
 }
-
+.cardi a {
+    text-decoration: none;
+    color:inherit;
+}
+.cardi:hover {
+    box-shadow: 1px 9px 22px 0px rgba(0,0,0,0.75);
+    text-decoration:underline;
+}
+.imgenglish {
+    background-image: url(https://khub.clc.pshs.edu.ph/pluginfile.php/43877/course/overviewfiles/ENG3%20Headers-Balingkilat.png);
+    height:10rem;
+    background-position:top;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.imgsocsci {
+    background-image: url(https://khub.clc.pshs.edu.ph/pluginfile.php/43968/course/overviewfiles/images.jpg);
+    height:10rem;
+    background-position:top;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.img {
+    height:10rem;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px; 
+}
+.imgvaled {
+    background-image: url(https://khub.clc.pshs.edu.ph/pluginfile.php/43993/course/overviewfiles/Welcome%20to%20Math%20Class%20Google%20Classroom%20Header.gif);
+    background-position:center;
+}
+.imgpe {
+    background-image:url(https://khub.clc.pshs.edu.ph/pluginfile.php/44008/course/overviewfiles/PE%204.jpg);
+    background-position:center;
+}
+.imghealth {
+    background-image:url(https://khub.clc.pshs.edu.ph/pluginfile.php/44023/course/overviewfiles/bannerbaling.gif);
+    background-position:center;
+}
+.imgfili {
+    background-image:url(https://khub.clc.pshs.edu.ph/pluginfile.php/43898/course/overviewfiles/fil%203.jpg);
+    background-position:right;
+}
+.imgmath {
+    background-image:url(https://khub.clc.pshs.edu.ph/pluginfile.php/43927/course/overviewfiles/9%20Balingkilat%20Image%20Course.PNG);
+    background-position:center;
+}
         </style>
     </head>
 
@@ -291,19 +369,72 @@ a{
                 <h1>
                     Course Overview
                 </h1>
-                <a href="#"><div class="cardi imgc comsci">
-                    &nbsp;
+                <div class="cardi">
+                    <a href="#"><div class="img imgcomsci">
+                    </div>
+                    <div class="text">
+                        <p>Computer Science 3 - Balingkilat</p>
+                    </div>
+                    </a>
                 </div>
-                <div class="cardi text comsci">
-                    <p>Computer Science 3 - Balingkilat</p>
+                <div class="cardi">
+                    <div class="img imgenglish">
+                    </div>
+                    <div class="text">
+                        <p>English 3 - Balingkilat</p>
+                    </div>
                 </div>
-            </a>
+                <div class="cardi">
+                    <div class="img imgsocsci">
+                    </div>
+                    <div class="text">
+                        <p>Social Science 3 - Balingkilat</p>
+                    </div>
+                </div>
+                <div class="cardi">
+                    <div class="img imgvaled">
+                    </div>
+                    <div class="text">
+                        <p>Values Education 3 - Balingkilat</p>
+                    </div>
+                </div>
+                <div class="cardi">
+                    <div class="img imgpe">
+                    </div>
+                    <div class="text">
+                        <p>Physical Education 3 - Balingkilat</p>
+                    </div>
+                </div>
+                <div class="cardi">
+                    <div class="img imghealth">
+                    </div>
+                    <div class="text">
+                        <p>Health 3 - Balingkilat</p>
+                    </div>
+                </div>
+                <div class="cardi">
+                    <div class="img imgfili">
+                    </div>
+                    <div class="text">
+                        <p>Filipino 3 - Balingkilat</p>
+                    </div>
+                </div>
+                <div class="cardi">
+                    <div class="img imgmath">
+                    </div>
+                    <div class="text">
+                        <p>Mathematics 3 - Balingkilat</p>
+                    </div>
+                </div>
+
             </aside>
             <footer>
 
             </footer>
         </div>
-        
+        <script>
+            var x=0;
+        </script>
         <script>
             function myFunction() {
                 if(x==0){
