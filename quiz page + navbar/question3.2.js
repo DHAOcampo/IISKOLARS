@@ -1,5 +1,6 @@
 function questionFunction6(){
     document.getElementById('number3').style.backgroundColor='rgb(233, 105, 105)';
+    document.getElementById('count3').style.backgroundColor='rgb(233, 105, 105)';
    
     var all = document.getElementsByClassName('questionbuttonwrong4');
 for (var i = 0; i < all.length+1; i++) {

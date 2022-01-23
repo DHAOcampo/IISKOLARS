@@ -35,7 +35,7 @@
     height: 15px;
     padding: 0pt;
 background-image:url('check.png');
-background-color:green!important;
+background-color:#48C9B0!important;
 background-size: cover;
 }
 .questionbuttonwrong{
@@ -75,7 +75,7 @@ background-color: gray;
     height: 15px;
     padding: 0pt;
 background-image:url('X.png');
-background-color: red;
+background-color: rgb(233, 105, 105);
 background-size: cover;
 }
 
@@ -110,10 +110,14 @@ background-size: cover;
         border: rgb(155, 158, 158) solid 1px;
         }
 
+       
         #count1{
 width: 30px;
-height: 40px;
+height: 30px;
+padding-top: 10px;
 border: 1px solid black;
+font-size: 20px;
+text-align: center;
         border-radius: 10%;
         float: left;
         margin-left: 10px;
@@ -122,8 +126,11 @@ border: 1px solid black;
         
         #count2{
             width: 30px;
-            height: 40px;
+            height: 30px;
             border: 1px solid black;
+            padding-top: 10px;
+            font-size: 20px;
+            text-align: center;
                     border-radius: 10%;
                     float: left;
                     margin-left: 10px;
@@ -132,7 +139,10 @@ border: 1px solid black;
 
                     #count3{
                         width: 30px;
-                        height: 40px;
+                        height: 30px;
+                        font-size: 20px;
+                        padding-top: 10px;
+                        text-align: center;
                         border: 1px solid black;
                         border-radius: 10%;
                     float: left;

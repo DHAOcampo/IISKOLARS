@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>IISKOLARSQuizPage2</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
+
     <link rel="stylesheet" href="questions.css">
     
 <style>
 
 #finish{
-  font-family: "Poppins",sans-serif;
+  font-family: 'Josefin Sans', sans-serif;;
   height: 40px;
   font-size: 15px;
   color: white;
@@ -26,39 +31,49 @@
   body{
     margin: 0cm;
     color: rgb(226, 238, 248);
-    background-color: rgb(226, 238, 248);
-    font-family: "Poppins",sans-serif;
+    font-size: 19px;
+    background-color:rgb(204, 223, 238);
+    font-family: 'Josefin Sans', sans-serif;
   }
 
     
-#body{
-    width: auto;
-    height: auto;
-    background-color: rgb(226, 238, 248);
+  #body{
+width: calc( 100% - 80px );
+height: fit-content;
+background-color:
+rgb(204, 223, 238);
+color: rgb(35, 48, 56);
+padding: 10px;
+margin-right:0px ;
+margin-top: 60px;
+position: absolute;
+right:0px;
+top:0px;
+transition: width  1s;
+ 
+}
+
+#body2{
+    width: calc(100% - 20px);
+    height: fit-content;
+    background-color:
+rgb(204, 223, 238);
     color: rgb(35, 48, 56);
     padding: 10px;
     margin-right:0px ;
     margin-top: 60px;
-    margin-left: 60px;
-  
-}
-#body2{
-    width: auto;
-    height: auto;
-    padding: 10px;
-    background-color: rgb(226, 238, 248);
-    margin-left: 0cm;
-    margin-right:0px ;
-    margin-top: 60px;
-
-    color: black;
-}
+    margin-left: 0px;
+    position: absolute;
+right:0px;
+top:0px;
+    transition:  width  0.9s;
+    }
 .quizhead{
   padding:10px;
   width: auto;
   height: auto;
-  background-color: white;
-  border: rgb(155, 158, 158) solid 1px;
+  background-color:#eef5f9;
+  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
 }
 
@@ -66,8 +81,8 @@
   padding:10px;
   width:70%;
   height: auto;
-  background-color: white;
-  border: rgb(155, 158, 158) solid 1px;
+  background-color: #eef5f9;
+  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
   z-index: 1;
   float: left;
@@ -78,8 +93,8 @@
   padding-top: 5px;
   width: calc(30% - 55px);
   height: auto;
-  background-color: white;
-  border: rgb(155, 158, 158) solid 1px;
+  background-color: #eef5f9;
+  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
   float: right;
   padding-left: 0px;
@@ -94,7 +109,8 @@
     padding: 10px;
 height: auto;
 float: right;
-background-color: rgb(177, 217, 255);
+background-color: rgb(214, 226, 255);
+border-radius: 5px;
 word-wrap: break-word;
 }
 
@@ -106,8 +122,8 @@ word-wrap: break-word;
   padding:10px;
   width:calc(100% - 20px);
   height: 40px;
-  background-color: white;
-  border: rgb(155, 158, 158) solid 1px;
+  background-color:#eef5f9;
+  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
   float: none;
 
@@ -119,8 +135,8 @@ word-wrap: break-word;
   padding:10px;
   width:calc(100% - 20px);
   height: auto;
-  background-color: white;
-  border: rgb(155, 158, 158) solid 1px;
+  background-color: #eef5f9;
+  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
   margin-right: 20px;
   z-index: 1;
@@ -170,16 +186,23 @@ let z=0;
   
 </head>
 <body>
-    <button id="button" type="button" onclick="myFunction()"><img class="menu" src="menu.png" alt="menu"></button>
+  <nav class="navright">
+    <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
     <ul id="demo">
-        <li><a href="#home"><img class="menu" src="menu.png" alt="menu"></a></li>
-        <li><a href="#news"><img class="menu" src="search.png" alt="menu"></a></li>
-        <li><a href="#contact"><img class="menu" src="copy.png" alt="menu"></a></li>
-        <li><a href="#about"><img class="menu" src="home.png" alt="menu"></a></li>
-      </ul>
-    <header>
-<h2>Vertical Navigation Bar</h2>
-</header>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+        <li><a href="#news"><i class="material-icons menu">search</i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthPage.html"><i class="material-icons menu">info</i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/GradesPage.html"><i class="fa fa-graduation-cap"></i></a></li>
+    </ul>
+    <header class="uppernav">
+        <div class="logo">
+            <img class="logoimage" alt="logo" src="logoiiskolars.png">
+        </div>
+        <i class="gg-bell"></i>
+        <i class="material-icons chat">chat_bubble_outline</i>
+    </header>
+</nav>
+
 
 <div id="body">
   <div class="quizhead">
@@ -189,13 +212,13 @@ bcjkwabfjweufbewijrfber
 
   <div class="quizaside">
     <div id="count1">
-
+1
     </div>
     <div id="count2">
-      
+   2
     </div>
     <div id="count3">
-      
+    3
     </div>
   </div>
   
@@ -318,11 +341,9 @@ onclick="questionFunction6()">
 
     
 </div>
-<a href="index.html"><button id="finish"  type="button">Submit all and Finish</button></a>
+<button id="finish" onclick="location.href='index.html';" type="button">Submit all and Finish</button>
 
-<p id='demo2'>
-  
-</p>
+
 </div>
 
 
