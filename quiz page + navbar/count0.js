@@ -1,7 +1,11 @@
 function change(){
-    let c = sessionStorage.getItem("c");
+    let c = localStorage.getItem("c");
     c = 2;
-    sessionStorage.setItem("c", c);
+    localStorage.setItem("c", c);
+    
+    var z = localStorage.getItem("z");
+  z = 0;
+      localStorage.setItem("z", z);
 
 
 

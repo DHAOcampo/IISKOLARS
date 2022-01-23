@@ -94,12 +94,13 @@ table{
 }
 
 td{
-  width: 33%;
+  width: 16.66%;
   text-align: center;
 }
 
 th{
   background-color: rgb(214, 226, 255);
+  font-size: 1.7vw;
   padding: 5px;
   border-left: none;
   border-right: none;
@@ -144,7 +145,7 @@ let y=0;
         <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
         <li><a href="#news"><i class="material-icons menu">search</i></a></li>
         <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthPage.html"><i class="material-icons menu">info</i></a></li>
-        <li><a href="gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/GradesPage.html"><i class="fa fa-graduation-cap"></i></a></li>
     </ul>
     <header class="uppernav">
         <div class="logo">
@@ -161,82 +162,85 @@ let y=0;
 <h1>Computer Sci</h1>
 bcjkwabfjweufbewijrfber
   </div>
-  <div class="quizhead">
-    <h1>1Q Quiz 1</h1>
-    <h2>Coverage</h2>
-    <p>
-      .The Internet<br>
-      .Privacy<br><br>
-Welcome to your 1st quiz in CS 3! Quizzes are usually open for 3 days but since it's your first, it's open for 4 days until the end of the week. There is always at least one bonus question in CS 3 quizzes. Correct answers will be revealed and made available for review once everybody in the section has taken the quiz.
-
-Originally open: Sep 21 7:40 am to Sep 24 4:30 pm
-
-Reopens Mon Sep 27 7:40am to 4:30pm for those who missed.
-    </p>
-
-  </div>
+  
   
 
   <div id="quizfooter">
-<h2>Formative Assessment #5</h2>
-<p>
-Grading method: Highest grade
-</p>
-  
- <h2> Summary of your previous attempts</h2>
+<h2>User report - Stephen Tunaya</h2>
     <table>
       <tr>
         <th>
-          Attempt
+          Grade item
+            </th>
+        <th>
+        Grade
         </th>
         <th>
-          State
+            Range
         </th>
         <th>
-          Score
+            Percentage
         </th>
+        <th>
+            Feedback
+          </th>
+          <th>
+            Contribution to course total
+          </th>
       </tr>
       <tr>
+          <td>
+             FA 5
+          </td>
+            <td>
+                <p id="demo2">
+                  <script>
+                  var z = localStorage.getItem("z");
+                  document.getElementById("demo2").innerHTML = z;
+                  </script>
+                </p> 
+              </td>
         <td>
-      1
+     0-3
         </td>
-        <td id="finished">
-      No attempt
+        <td id="percent">
+            1
+        </td>
+        
+        <td id="feedback">
+
         </td>
         <td>
-          <p id="demo2">
-            <script>
-            var z = localStorage.getItem("z");
-            document.getElementById("demo2").innerHTML = z;
-            </script>
-          </p> 
+            100%
         </td>
+       
       </tr>
     </table>
+    <script>
+        var z = localStorage.getItem("z");
+        if(z==3){
+      document.getElementById("percent").innerHTML = "100%";
+      document.getElementById("feedback").innerHTML = "Great Job";
+  }
+  if(z==2){
+      document.getElementById("percent").innerHTML = "66.66%";
+      document.getElementById("feedback").innerHTML = "Good job";
+  }
+  if(z==1){
+      document.getElementById("percent").innerHTML = "33.33%";
+      document.getElementById("feedback").innerHTML = "Review pls";
+  }
+  if(z==0){
+      document.getElementById("percent").innerHTML = "0%";
+      document.getElementById("feedback").innerHTML = "Halata di nagreview";
+  }
+      </script>
 
-
-
-
-<button id="finish"  onclick="change();location.href='quiz.html'; " type="button">attempt now</button>
 
 
   </div>
 
 </div>
-
-<script>
-   var c =  localStorage.getItem("c");
-  if (c==2){
-    document.getElementById("finish").innerHTML = "Try again";
-document.getElementById("finished").innerHTML = "finished";
-  }
-
-  else{
-    document.getElementById("finish").innerHTML = "attempt now";
-document.getElementById("finished").innerHTML = "No attempt";
-  }
-
-</script>
 </body>
 
 </html>
