@@ -147,3 +147,17 @@ nav {
   padding-left:20px;
   width:fit-content;
 }
+.gg-bell {
+  width: 14px;
+  height: 14px;
+  position:absolute;
+  top:25px;
+  right:94px;
+}
+.chat {
+  width: 14px;
+  height: 14px;
+  position:absolute;
+  top:22px;
+  right:50px;
+}
