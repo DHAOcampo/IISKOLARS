@@ -165,7 +165,7 @@ a{
  }
 }
 #body{
-width: calc( 100% - 80px );
+width: calc( 100% - 60px );
 height: fit-content;
 background-color: rgb(204, 223, 238);
 color: rgb(35, 48, 56);
@@ -313,6 +313,12 @@ transition: width  1s;
                 }
                 .img {
                     height:60%;
+                }
+            }
+            
+            @media(max-width:350px){
+                .gg-bell, .chat {
+                    visibility:hidden!important;
                 }
             }
         </style>
