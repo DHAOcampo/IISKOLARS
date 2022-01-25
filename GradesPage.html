@@ -1,78 +1,43 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>IISKOLARS Grade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href='https://css.gg/bell.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+    <link rel="stylesheet" href="navbar.css">
+    <script  src="countingfile.js"></script>
+    <script  src="count0.js"></script>
+
 <style>
-
-header {
-    display:block;
-}
-nav {
-    background-color:#FF604E;
-    width:100%;
-    position:fixed;
-    top:0;
-}
-.hubname {
-    color:black;
-    padding-top:32px;
-    padding-bottom:32px;
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
-.logo, .logoimage {
-    height:70px;
-}
-.logo {
-    padding-left:20px;
-    width:fit-content;
-}
-.frontpageheader {
- padding-bottom:40px;
-}
-
-.loginbox {
-    background-color:aliceblue;
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top:10px;
-    padding-left:20px;
-    padding-right:20px;
-    padding-bottom:10px;
-    width:fit-content;
-
-}
-
-.gg-bell {
-    width: 14px;
-    height: 14px;
-    position:absolute;
-    top:25px;
-    right:94px;
-}
-.chat {
-    width: 14px;
-    height: 14px;
-    position:absolute;
-    top:22px;
-    right:50px;
-}
-
 .navright, .uppernav {
-float:left;
-background-color:#FF604E;
-}
-.uppernav {
-width: calc(100vw - 60px);
-height: 60px;
-position: sticky;
-position: absolute;
-top: 0px;
-left: 60px;
-float: left;
-position: fixed;
-float:left;
-left: 60px;
-top: 0px;
-z-index: 2;
+  float:left;
+  background-color:#FF604E;
+      z-index:9;
+  }
+  .uppernav {
+  width: calc(100vw - 60px);
+  height: 60px;
+  position: sticky;
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  float: left;
+  position: fixed;
+  float:left;
+  left: 60px;
+  top: 0px;
+  z-index: 2;
 }
 ul {
 list-style-type: none;
@@ -80,7 +45,7 @@ margin: 0;
 padding: 0;
 display: block;
 width: 60px;
-height: calc(100vh - 60px);
+height: calc(100vh);
 background-color:#D65344;
 position: fixed;
 float:left;
@@ -107,7 +72,7 @@ color: #000;
 padding: 5px;
 padding-top: 15px;
 padding-bottom: 0px;
-height: 50px;
+height: 35px;
 text-align:center;
 text-decoration: none;
 }
@@ -157,9 +122,30 @@ to{
 transform:scaleX(1);
 }
 }
+  body{
+    margin: 0cm;
+    color:#212529 ;
+    font-size: 17px;
+    background-color:rgb(204, 223, 238) ;
+    font-family:'Josefin Sans', sans-serif;
+  }
+
+  #finish{
+  font-family: 'Josefin Sans', sans-serif;;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(45, 109, 226);
+  float: right;
+  margin-top:  30px; 
+  border:none;
+  
+}
+
 #body{
 width: calc( 100% - 80px );
 height: fit-content;
+background-color:rgb(204, 223, 238);
 color: rgb(35, 48, 56);
 padding: 10px;
 margin-right:0px ;
@@ -174,6 +160,7 @@ transition: width  1s;
 #body2{
     width: calc(100% - 20px);
     height: fit-content;
+    background-color: rgb(204, 223, 238);
     color: rgb(35, 48, 56);
     padding: 10px;
     margin-right:0px ;
@@ -184,71 +171,208 @@ right:0px;
 top:0px;
     transition:  width  0.9s;
     }
+    nav {
+  background-color:#FF604E;
+  width:100%;
+  position:fixed;
+  top:0;
+}
+
+.logo {
+  height:70px;
+}
+.logoimage {
+  height:65px;
+}
+.logo {
+  padding-left:20px;
+  width:fit-content;
+}
+.gg-bell {
+  width: 14px;
+  height: 14px;
+  position:absolute;
+  top:25px;
+  right:94px;
+}
+.chat {
+  width: 14px;
+  height: 14px;
+  position:absolute;
+  top:22px;
+  right:50px;
+}
+.gradehead{
+  padding:10px;
+  width: auto;
+  height: auto;
+  background-color: #eef5f9;
+  border-top: #FF604E solid 2px;
+  margin-bottom: 20px;
+}
+#gradefooter{
+  padding:10px;
+  width: auto;
+  height: auto;
+  background-color: #eef5f9;
+  border-top: #FF604E solid 2px;
+  margin-bottom: 20px;
+}
+
+table{
+  width: 100%;
+  height: auto;
+ border-collapse: collapse;
+}
+
+td{
+  width: 16.66%;
+  text-align: center;
+}
+
+th{
+  background-color: rgb(214, 226, 255);
+  font-size: 1.7vw;
+  padding: 5px;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid black;
+  border-bottom:1px solid black;
+}
 </style>
+
+<script>
+let x=0;
+let y=0;
+</script>
+<script>
+    function myFunction() {
+        if(x==0){
+            x=x+1;
+            demo.classList.remove("transition2");
+        demo.setAttribute("class", "transition1");
+        document.getElementById("demo").style.transform="scaleX(0)";
+        body.classList.remove("body");
+        body.setAttribute("id","body2");
+        
+        }
+        else{
+            x=x-1;
+        document.getElementById("demo").style.transform="scaleX(1)";
+        demo.classList.remove("transition1");
+    demo.setAttribute("class", "transition2");
+    body2.classList.remove("body2");
+        body2.setAttribute("id","body");
+        
+       
+        }
+      }
+      </script>
+  
 </head>
 <body>
-    <nav class="navright">
-        <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
-        <ul id="demo">
-            <li><a href="#home"><i class="material-icons menu">home</i></a></li>
-            <li><a href="#news"><i class="material-icons menu">search</i></a></li>
-            <li><a href="#info"><i class="material-icons menu">info</i></a></li>
-            <li><a href="#courses"><i class="fa fa-graduation-cap"></i></a></li>
-        </ul>
-        <header class="uppernav">
-            <div class="logo">
-                <img class="logoimage" alt="logo" src="logoiiskolars.png">
-            </div>
-            <i class="gg-bell"></i>
-            <i class="material-icons chat">chat_bubble_outline</i>
-        </header>
-    </nav>
-<div id="body" class="thead-light">
-    <h1 style="font-family: 'Josefin Sans', sans-serif;">Grades</h1>
-    <table class="table table-bordered table-sm">
-      <thead>
-        <tr>
-          <th style="font-family: 'Josefin Sans', sans-serif;">Quiz #</th>
-          <th style="font-family: 'Josefin Sans', sans-serif;">Score</th>
-          <th style="font-family: 'Josefin Sans', sans-serif;">Percentage</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="font-family: 'Josefin Sans', sans-serif;">1</td>
-          <td style="font-family: 'Josefin Sans', sans-serif;">5/5</td>
-          <td style="font-family: 'Josefin Sans', sans-serif;">100%</td>
-        </tr>
-      </tbody>
-    </table>
-  
-</div>
-    
-    <script>
-    var x=0;
-    </script>
+  <nav class="navright">
+    <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
+    <ul id="demo">
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+        <li><a href="#news"><i class="material-icons menu">search</i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthPage.html"><i class="material-icons menu">info</i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/GradesPage.html"><i class="fa fa-graduation-cap"></i></a></li>
+    </ul>
+    <header class="uppernav">
+        <div class="logo">
+            <img class="logoimage" alt="logo" src="logoiiskolars.png">
+        </div>
+        <i class="gg-bell"></i>
+        <i class="material-icons chat">chat_bubble_outline</i>
+    </header>
+</nav>
 
+
+<div id="body">
+  <div class="gradehead">
+<h1>Computer Sci</h1>
+You are currently viewing your grades on this subject.
+  </div>
+  
+  
+
+  <div id="gradefooter">
+<h2>User Report</h2>
+    <table>
+      <tr>
+        <th>
+          Grade item
+            </th>
+        <th>
+        Grade
+        </th>
+        <th>
+            Range
+        </th>
+        <th>
+            Percentage
+        </th>
+        <th>
+            Feedback
+          </th>
+          <th>
+            Contribution to course total
+          </th>
+      </tr>
+      <tr>
+          <td>
+             FA 5
+          </td>
+            <td>
+                <p id="demo2">
+                  <script>
+                  var z = localStorage.getItem("z");
+                  document.getElementById("demo2").innerHTML = z;
+                  </script>
+                </p> 
+              </td>
+        <td>
+     0-3
+        </td>
+        <td id="percent">
+            1
+        </td>
+        
+        <td id="feedback">
+
+        </td>
+        <td>
+            100%
+        </td>
+      </tr>
+
+    </table>
     <script>
-        function myFunction() {
-            if(x==0){
-                x=x+1;
-                demo.classList.remove("transition2");
-            demo.setAttribute("class", "transition1");
-            document.getElementById("demo").style.transform="scaleX(0)";
-            body.classList.remove("body");
-            body.setAttribute("id","body2");
-            
-            }
-            else{
-                x=x-1;
-            document.getElementById("demo").style.transform="scaleX(1)";
-            demo.classList.remove("transition1");
-        demo.setAttribute("class", "transition2");
-        body2.classList.remove("body2");
-            body2.setAttribute("id","body");
-            
-           
-            }
-          }
-          </script>
+        var z = localStorage.getItem("z");
+        if(z==3){
+      document.getElementById("percent").innerHTML = "100%";
+      document.getElementById("feedback").innerHTML = "Great Job";
+  }
+  if(z==2){
+      document.getElementById("percent").innerHTML = "66.66%";
+      document.getElementById("feedback").innerHTML = "Good job";
+  }
+  if(z==1){
+      document.getElementById("percent").innerHTML = "33.33%";
+      document.getElementById("feedback").innerHTML = "Review pls";
+  }
+  if(z==0){
+      document.getElementById("percent").innerHTML = "0%";
+      document.getElementById("feedback").innerHTML = "Halata di nagreview";
+  }
+      </script>
+
+
+
+  </div>
+
+</div>
 </body>
+
+</html>
