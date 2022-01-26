@@ -88,7 +88,7 @@ ul {
   display: block;
   width: 60px;
   height: calc(100vh - 60px);
-  background-color:#D65344;
+  background-color:#CF5D50;
   position: fixed;
   float:left;
   left: 0px;
@@ -307,6 +307,91 @@ transition: width  1s;
     background-image:url(https://khub.clc.pshs.edu.ph/pluginfile.php/43927/course/overviewfiles/9%20Balingkilat%20Image%20Course.PNG);
     background-position:center;
 }
+
+.Home a :after {
+   content: 'HOMEPAGE' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 0px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Home :after {
+   content: 'HOMEPAGE' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 0px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+ 
+ .Quiz  :after {
+   content: 'QUIZ' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 50px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Author  :after {
+   content: "ABOUT US" ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 100px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Grade  :after {
+   content: "GRADES" ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 150px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
             @media(max-width:940px){
                 .cardi {
                     width:100%;
@@ -328,10 +413,10 @@ transition: width  1s;
         <nav class="navright">
             <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
             <ul id="demo">
-                <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
-                <li><a href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20%2B%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
-                <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html"><i class="material-icons menu">info</i></a></li>
-                <li><a href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+                <li class="Home" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+                <li class="Quiz"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
+                <li class="Author"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
+                <li class="Grade"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz page + navbar/gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
             </ul>
             <header class="uppernav">
                 <div class="logo">
