@@ -190,6 +190,90 @@ text-align:center;
                 padding-left:20px;
                 width:fit-content;
             }
+        .Home a :after {
+   content: 'HOMEPAGE' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 0px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Home :after {
+   content: 'HOMEPAGE' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 0px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+ 
+ .Quiz  :after {
+   content: 'QUIZ' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 50px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Author  :after {
+   content: "ABOUT US" ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 100px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Grade  :after {
+   content: "GRADES" ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 150px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
     </style>
     <script>
         let x=0;
@@ -224,11 +308,11 @@ text-align:center;
     <nav class="navright">
         <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
         <ul id="demo">
-            <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
-            <li><a href="#news"><i class="material-icons menu">search</i></a></li>
-            <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthPage.html"><i class="material-icons menu">info</i></a></li>
-            <li><a href=https://dhaocampo.github.io/IISKOLARS/GradesPage.html><i class="fa fa-graduation-cap"></i></a></li>
-        </ul>
+                <li class="Home" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+                <li class="Quiz"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
+                <li class="Author"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
+                <li class="Grade"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz page + navbar/gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+            </ul>
         <header class="uppernav">
             <div class="logo">
                 <img class="logoimage" alt="logo" src="logoiiskolars.png">
