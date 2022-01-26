@@ -153,7 +153,7 @@ text-align: center;
                                 @media only screen and (max-width: 576px){
                                     #count1{
                                         width: 30px;
-                                        height: 40px;
+                                        height: 30px;
                                         border: 1px solid black;
                                                 border-radius: 10%;
                                                 float: left;
@@ -163,7 +163,7 @@ text-align: center;
                                                 
                                                 #count2{
                                                     width: 30px;
-                                                    height: 40px;
+                                                    height: 30px;
                                                     border: 1px solid black;
                                                             border-radius: 10%;
                                                             float: left;
@@ -173,7 +173,7 @@ text-align: center;
                                         
                                                             #count3{
                                                                 width: 30px;
-                                                                height: 40px;
+                                                                height: 30px;
                                                                 border: 1px solid black;
                                                                 border-radius: 10%;
                                                             float: left;
