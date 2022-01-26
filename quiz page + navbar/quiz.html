@@ -6,18 +6,108 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href='https://css.gg/bell.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
     
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="questions.css">
     
 <style>
+.Home a :after {
+  content: 'HOMEPAGE' ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Home :after {
+  content: 'HOMEPAGE' ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Quiz  :after {
+  content: 'QUIZ' ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 50px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Author  :after {
+  content: "ABOUT US" ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 100px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Grade  :after {
+  content: "GRADES" ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 150px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+li  :hover:after{
+transform: scaley(1);
+  transform-origin: bottom left;
+  background-color: rgb(18, 113, 98);
+}
 
 #finish{
   font-family: 'Josefin Sans', sans-serif;;
@@ -41,7 +131,7 @@
 
     
   #body{
-width: calc( 100% - 60px );
+width: calc( 100% - 80px );
 height: fit-content;
 background-color:
 rgb(204, 223, 238);
@@ -76,7 +166,7 @@ top:0px;
   width: auto;
   height: auto;
   background-color:#eef5f9;
-  border-top: #FF604E solid 2px;
+  border-top: rgb(42, 157, 143) solid 2px;
   margin-bottom: 20px;
 }
 
@@ -89,7 +179,7 @@ top:0px;
   width:70%;
   height: auto;
   background-color: #eef5f9;
-  border-top: #FF604E solid 2px;
+  border-top: rgb(42, 157, 143) solid 2px;
   margin-bottom: 20px;
   z-index: 1;
   float: left;
@@ -101,7 +191,6 @@ top:0px;
   width: calc(30% - 55px);
   height: auto;
   background-color: #eef5f9;
-  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
   float: right;
   padding-left: 0px;
@@ -109,6 +198,49 @@ top:0px;
   
 }
 
+.navright, .uppernav {
+  float:left;
+  background-color:rgb(42, 157, 143);
+      z-index:2;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: block;
+width: 60px;
+height: calc(100vh - 60px);
+background-color:rgb(42, 157, 143);
+position: fixed;
+float:left;
+left: 0px;
+top: 60px;
+}
+
+#button{ 
+width: 60px;
+height: 60px;
+float:left;
+position: fixed;
+left:0px;
+top:0px;
+float:left;
+background-color: rgb(28, 133, 117);
+border:none;
+
+}
+
+li a:hover {
+background-color: rgb(18, 113, 98);
+color: white;
+}
+
+a{
+background-color:rgb(28, 133, 117);
+margin-left: auto;
+margin-right: auto;
+}
 
 .question{
     width:calc(100% - 130px);
@@ -130,7 +262,6 @@ word-wrap: break-word;
   width:calc(100% - 20px);
   height: 40px;
   background-color:#eef5f9;
-  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
   float: none;
 
@@ -143,20 +274,14 @@ word-wrap: break-word;
   width:calc(100% - 20px);
   height: auto;
   background-color: #eef5f9;
-  border-top: #FF604E solid 2px;
+  border-top: rgb(42, 157, 143) solid 2px;
   margin-bottom: 20px;
   margin-right: 20px;
   z-index: 1;
 }
- 
-  }
 
 
-@media(max-width:350px){
-                .gg-bell, .chat {
-                    visibility:hidden!important;
-                }
-            }
+}
 
 </style>
 <script>
@@ -202,10 +327,10 @@ let z=0;
   <nav class="navright">
     <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
     <ul id="demo">
-        <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
-        <li><a href="#news"><i class="material-icons menu">search</i></a></li>
-        <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthPage.html"><i class="material-icons menu">info</i></a></li>
-        <li><a href="gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+        <li class="Home" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+        <li class="Quiz"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
+        <li class="Author"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
+        <li class="Grade"><a  href="https://dhaocampo.github.io/IISKOLARS/GradesPage.html"><i class="fa fa-graduation-cap"></i></a></li>
     </ul>
     <header class="uppernav">
         <div class="logo">
@@ -219,8 +344,8 @@ let z=0;
 
 <div id="body">
   <div class="quizhead">
-<h1>Computer Sci</h1>
-bcjkwabfjweufbewijrfber
+<h1>COM Sci</h1>
+Common Opinions and Mannuerisms science
   </div>
 
   <div class="quizaside">
@@ -250,23 +375,23 @@ bcjkwabfjweufbewijrfber
 
   <div class="question">
 
-    <h4>What is the worst subject </h4>
+    <h4>what color is the grades page? </h4>
 
     
 
     <div class="wrong"><button class="questionbuttonwrong" type="button"
 onclick="questionFunction2()">
- </button>Math</div>
+ </button>Orange</div>
     <div class="wrong"><button class="questionbuttonwrong" type="button"
     onclick="questionFunction2()">
-    </button>Comsci</div>
+    </button>Yellow</div>
 
         <div class="wrong"><button class="questionbuttonwrong" type="button"
         onclick="questionFunction2()">
-        </button>Chem</div>
+        </button>Light blue</div>
 
         <div class="right"><button id="questionbuttonright" type="button" onclick="questionFunction();fart();" >
-        </button>Valed
+        </button>Dark blue
         </div>
 
 

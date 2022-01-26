@@ -19,6 +19,48 @@
     <script  src="count0.js"></script>
 
 <style>
+.navright, .uppernav {
+  float:left;
+  background-color:rgb(42, 157, 143);
+      z-index:2;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: block;
+width: 60px;
+height: calc(100vh - 60px);
+background-color:rgb(42, 157, 143);
+position: fixed;
+float:left;
+left: 0px;
+top: 60px;
+}
+
+#button{ 
+width: 60px;
+height: 60px;
+float:left;
+position: fixed;
+left:0px;
+top:0px;
+float:left;
+background-color: rgb(28, 133, 117);
+border:none;
+
+}
+
+li a:hover {
+background-color: rgb(18, 113, 98);
+color: white;
+}
+a{
+background-color:rgb(28, 133, 117);
+margin-left: auto;
+margin-right: auto;
+}
 
   body{
     margin: 0cm;
@@ -75,7 +117,7 @@ top:0px;
   width: auto;
   height: auto;
   background-color: #eef5f9;
-  border-top: #FF604E solid 2px;
+  border-top: rgb(42, 157, 143) solid 2px;
   margin-bottom: 20px;
 }
 #quizfooter{
@@ -83,7 +125,7 @@ top:0px;
   width: auto;
   height: auto;
   background-color: #eef5f9;
-  border-top: #FF604E solid 2px;
+  border-top: rgb(42, 157, 143) solid 2px;
   margin-bottom: 20px;
 }
 
@@ -99,13 +141,105 @@ td{
 }
 
 th{
-  background-color: rgb(214, 226, 255);
+  background-color: rgb(42, 157, 143);
   padding: 5px;
   border-left: none;
   border-right: none;
   border-top: 1px solid black;
   border-bottom:1px solid black;
 }
+
+.Home a :after {
+  content: 'HOMEPAGE' ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Home :after {
+  content: 'HOMEPAGE' ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 0px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Quiz  :after {
+  content: 'QUIZ' ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 50px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Author  :after {
+  content: "ABOUT US" ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 100px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+.Grade  :after {
+  content: "GRADES" ;
+  background-color:rgb(28, 133, 117);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  padding-top: 15px;
+  position: absolute;
+  font-size: 20px;
+  top: 150px;
+  left:60px;
+  transform: scaleX(0);
+  height: 30px;
+  width: 120px;;
+  transform-origin: top left;
+  transition: 0.4s ease-out;
+}
+
+li  :hover:after{
+transform: scaley(1);
+  transform-origin: bottom left;
+  background-color: rgb(18, 113, 98);
+}
+
 </style>
 
 <script>
@@ -141,14 +275,14 @@ let y=0;
   <nav class="navright">
     <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
     <ul id="demo">
-        <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
-        <li><a href="#news"><i class="material-icons menu">search</i></a></li>
-        <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthPage.html"><i class="material-icons menu">info</i></a></li>
-        <li><a href="gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+        <li class="Home" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+        <li class="Quiz"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
+        <li class="Author"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
+        <li class="Grade"><a  href="https://dhaocampo.github.io/IISKOLARS/GradesPage.html"><i class="fa fa-graduation-cap"></i></a></li>
     </ul>
     <header class="uppernav">
         <div class="logo">
-            <img class="logoimage" alt="logo" src="logoiiskolars.png">
+            <img class="logoimage" alt="logo" src="https://dhaocampo.github.io/IISKOLARS/logoiiskolars.png">
         </div>
         <i class="gg-bell"></i>
         <i class="material-icons chat">chat_bubble_outline</i>
@@ -158,20 +292,20 @@ let y=0;
 
 <div id="body">
   <div class="quizhead">
-<h1>Computer Sci</h1>
-bcjkwabfjweufbewijrfber
+<h1>COM Sci</h1>
+Common Opinions and Mannuerisms science
   </div>
   <div class="quizhead">
     <h1>1Q Quiz 1</h1>
     <h2>Coverage</h2>
     <p>
-      .The Internet<br>
-      .Privacy<br><br>
-Welcome to your 1st quiz in CS 3! Quizzes are usually open for 3 days but since it's your first, it's open for 4 days until the end of the week. There is always at least one bonus question in CS 3 quizzes. Correct answers will be revealed and made available for review once everybody in the section has taken the quiz.
-
-Originally open: Sep 21 7:40 am to Sep 24 4:30 pm
-
-Reopens Mon Sep 27 7:40am to 4:30pm for those who missed.
+      >Facts about Stephen<br>
+      >Objective Facts<br><br>
+Welcome to your 1st quiz in C 3! Quizzes are usually open for 3 days but since it's your first, it's open for only like a for minutes lol There is always at least zero bonus question in CS 3 quizzes because I don't have the time for that or you. Correct answers will be revealed and made available for review once everybody in the section has taken the quiz aka just when you finish.
+<br><br>
+Originally open: now until someday
+<br><br>
+Reopens: Idk
     </p>
 
   </div>
