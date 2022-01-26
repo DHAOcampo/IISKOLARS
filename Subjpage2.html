@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <meta name = "author" content = "Group 4">
+    <meta name = "section" content = "Balingkilat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://css.gg/bell.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        IISKOLARS 
+    </title>
+    <style>
+        .main {
+            margin:0px;
+        }
+        .main {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .page {
+            padding-top: 70px;
+            padding-bottom: 240px;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+#body{
+width: calc( 100% - 60px );
+height: fit-content;
+background-color: rgb(204, 223, 238);
+color: rgb(35, 48, 56);
+padding: 10px;
+margin-right:0px ;
+margin-top: 60px;
+position: absolute;
+right:0px;
+top:0px;
+transition: width  1s;
+}
+
+#body2{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(204, 223, 238);
+    color: rgb(35, 48, 56);
+    padding: 10px;
+    margin-right:0px ;
+    margin-top: 60px;
+    margin-left: 0px;
+    position: absolute;
+    right:0px;
+    top:0px;
+    transition:  width  0.9s;
+    }
+.navright, .uppernav {
+            float:left;
+            background-color:#FF604E;
+                z-index:2;
+            }
+            .uppernav {
+            width: calc(100vw - 60px);
+            height: 60px;
+            position: sticky;
+            position: absolute;
+            top: 0px;
+            left: 60px;
+            float: left;
+            position: fixed;
+            float:left;
+            left: 60px;
+            top: 0px;
+            z-index: 2;
+}
+    .gg-bell {
+    width: 14px;
+    height: 14px;
+    position:absolute;
+    top:25px;
+    right:94px;
+}
+.chat {
+    width: 14px;
+    height: 14px;
+    position:absolute;
+    top:22px;
+    right:50px;
+}
+.navright ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 60px;
+  height: calc(100vh - 60px);
+  background-color:#D65344;
+  position: fixed;
+  float:left;
+  left: 0px;
+  top: 60px;
+}
+
+#button{ 
+    width: 60px;
+height: 60px;
+float:left;
+position: fixed;
+  left:0px;
+  top:0px;
+  float:left;
+  background-color: #CF5D50;
+  border:none;
+  
+}
+
+.navright li a {
+  display: block;
+  color: #000;
+padding: 5px;
+padding-top: 15px;
+padding-bottom: 0px;
+height: 50px;
+text-align:center;
+  text-decoration: none;
+}
+
+
+.navright li a:hover {
+  background-color: #555;
+  color: white;
+}
+.navright a{
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu{
+    width: 60%;
+    height: 60%;
+}
+.transition1{
+  animation: fadeIn1 1s;
+  -webkit-animation: fadeIn1 1s;  
+  transform: scaleX(0);
+  transform-origin:left;
+}
+@keyframes fadeIn1{
+ from{
+ transform: scaleX(1);
+}
+ to{
+    transform:scaleX(0);
+ }
+}
+
+.transition2{
+  animation: fadeIn2 1s; 
+  -webkit-animation: fadeIn2 1s;  ;
+  transform: scaleX(1);
+  transform-origin:left;
+}
+
+@keyframes fadeIn2{
+ from{
+ transform: scaleX(0);
+}
+ to{
+    transform:scaleX(1);
+ }
+}
+        .subjcontents ul li{
+        font-family: 'Josefin Sans', sans-serif;
+        }
+        .subjcontents ul li a{
+        color: rgb(196, 52, 52);
+        font-size: 20px;
+        }
+        .logo {
+                height:30px;
+            }
+            .logoimage {
+                height:65px;
+            }
+            .logo {
+                padding-left:20px;
+                width:fit-content;
+            }
+        .Home a :after {
+   content: 'HOMEPAGE' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 0px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Home :after {
+   content: 'HOMEPAGE' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 0px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+ 
+ .Quiz  :after {
+   content: 'QUIZ' ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 50px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Author  :after {
+   content: "ABOUT US" ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 100px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+
+ .Grade  :after {
+   content: "GRADES" ;
+   background-color:#CF5D50;
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 5px;
+   padding-top: 15px;
+   position: absolute;
+   font-size: 20px;
+   top: 150px;
+   left:60px;
+   transform: scaleX(0);
+   height: 30px;
+   width: 120px;;
+   transform-origin: top left;
+   transition: 0.4s ease-out;
+ }
+    </style>
+    <script>
+        let x=0;
+        let y=0;
+        let z=0;
+        </script>
+        <script>
+            function myFunction() {
+                if(x==0){
+                    x=x+1;
+                    demo.classList.remove("transition2");
+                demo.setAttribute("class", "transition1");
+                document.getElementById("demo").style.transform="scaleX(0)";
+                body.classList.remove("body");
+                body.setAttribute("id","body2");
+                
+                }
+                else{
+                    x=x-1;
+                document.getElementById("demo").style.transform="scaleX(1)";
+                demo.classList.remove("transition1");
+            demo.setAttribute("class", "transition2");
+            body2.classList.remove("body2");
+                body2.setAttribute("id","body");
+                }
+              }
+              </script>
+
+</head>
+
+<body class="main">
+    <nav class="navright">
+        <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
+        <ul id="demo">
+                <li class="Home" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+                <li class="Quiz"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
+                <li class="Author"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
+                <li class="Grade"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz page + navbar/gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+            </ul>
+        <header class="uppernav">
+            <div class="logo">
+                <img class="logoimage" alt="logo" src="logoiiskolars.png">
+            </div>
+            <i class="gg-bell"></i>
+            <i class="material-icons chat">chat_bubble_outline</i>
+        </header>
+    </nav>
+    
+    <div id="body">
+    <main class="page">
+        <div class="subjheader"> 
+            <h1> 
+                English 3 - Balingkilat
+            </h1>
+        </div>
+        <div class="subjcontents">
+            <h4> Activities</h4>
+            <hr>
+            <ul id="activities">
+                <li> <a href="#"> Quiz </a> </li>
+            </ul>
+            <hr>
+            <h4> References </h4>
+            <hr>
+            <ul id="references">
+                <li> <a href="#"> Reference One </a> </li>
+                <li> <a href="#"> Reference Two </a> </li>
+                <li> <a href="#"> Reference Three </a> </li>
+            </ul>
+            <hr>
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>
