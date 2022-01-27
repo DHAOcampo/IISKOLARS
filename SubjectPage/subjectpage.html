@@ -130,11 +130,11 @@ text-align:center;
 
 
 .navright li a:hover {
-  background-color: #555;
+  background-color: #D14839;
   color: white;
 }
-.navright a{
-  background-color: gray;
+.navright li a{
+  background-color: #CF5D50;
   margin-left: auto;
   margin-right: auto;
 }
@@ -190,9 +190,16 @@ text-align:center;
                 padding-left:20px;
                 width:fit-content;
             }
-        .Home a :after {
+        
+  li  :hover:after{
+ transform: scaley(1);
+   transform-origin: bottom left;
+   background-color: #D14839;
+ }
+
+.Home a :after {
    content: 'HOMEPAGE' ;
-   background-color:#CF5D50;
+   background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
    padding-top: 15px;
@@ -201,15 +208,15 @@ text-align:center;
    top: 0px;
    left:60px;
    transform: scaleX(0);
-   height: 30px;
-   width: 120px;;
+   height: fit-content;
+   width: 125px;
    transform-origin: top left;
    transition: 0.4s ease-out;
  }
 
  .Home :after {
    content: 'HOMEPAGE' ;
-   background-color:#CF5D50;
+   background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
    padding-top: 15px;
@@ -218,15 +225,15 @@ text-align:center;
    top: 0px;
    left:60px;
    transform: scaleX(0);
-   height: 30px;
-   width: 120px;;
+   height: fit-content;
+   width:125px;
    transform-origin: top left;
    transition: 0.4s ease-out;
  }
  
  .Quiz  :after {
    content: 'QUIZ' ;
-   background-color:#CF5D50;
+   background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
    padding-top: 15px;
@@ -235,15 +242,15 @@ text-align:center;
    top: 50px;
    left:60px;
    transform: scaleX(0);
-   height: 30px;
-   width: 120px;;
+   height: fit-content;
+   width: 120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
  }
 
  .Author  :after {
    content: "ABOUT US" ;
-   background-color:#CF5D50;
+   background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
    padding-top: 15px;
@@ -252,15 +259,15 @@ text-align:center;
    top: 100px;
    left:60px;
    transform: scaleX(0);
-   height: 30px;
-   width: 120px;;
+   height: fit-content;
+   width: 120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
  }
 
  .Grade  :after {
    content: "GRADES" ;
-   background-color:#CF5D50;
+   background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
    padding-top: 15px;
@@ -269,15 +276,10 @@ text-align:center;
    top: 150px;
    left:60px;
    transform: scaleX(0);
-   height: 30px;
-   width: 120px;;
+   height: fit-content;
+   width:120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
- }
- li  :hover:after{
- transform: scaley(1);
-   transform-origin: bottom left;
-   background-color: rgb(238, 160, 42);
  }
     </style>
     <script>
