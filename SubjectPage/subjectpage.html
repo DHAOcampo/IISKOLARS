@@ -19,15 +19,14 @@
     <style>
         .main {
             margin:0px;
+            height:100%;
         }
         .main {
             font-family: 'Josefin Sans', sans-serif;
         }
         .page {
-            padding-top: 70px;
-            padding-bottom: 240px;
-            padding-left: 30px;
-            padding-right: 10px;
+            margin:20px;
+            padding:30px;
         }
 #body{
 width: calc( 100% - 60px );
@@ -282,6 +281,22 @@ text-align:center;
    transform-origin: top left;
    transition: 0.4s ease-out;
  }
+        .page {
+            background-color:rgb(255,55,242);
+            padding:10px;
+        }
+        .subjheader {
+            text-align:center;
+        }
+        .quizz {
+        border:2px;
+        border-color:rgb(138,138,138);
+        color:rgb(42, 157, 143);
+        }
+        .assignm {
+        height:100%;
+            color:rgb(42, 157, 143);
+        }
     </style>
     <script>
         let x=0;
@@ -341,15 +356,7 @@ text-align:center;
             <h4> Activities</h4>
             <hr>
             <ul id="activities">
-                <li> <a href="#"> Quiz </a> </li>
-            </ul>
-            <hr>
-            <h4> References </h4>
-            <hr>
-            <ul id="references">
-                <li> <a href="#"> Reference One </a> </li>
-                <li> <a href="#"> Reference Two </a> </li>
-                <li> <a href="#"> Reference Three </a> </li>
+                <li class="quizz"> <i class="material-icons assignm">assignment</i> <a href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"> COMSci 1Q Quiz 1 </a> </li>
             </ul>
             <hr>
         </div>
