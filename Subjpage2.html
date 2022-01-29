@@ -17,21 +17,26 @@
         IISKOLARS 
     </title>
     <style>
-        .main {
+        body {
             margin:0px;
+            min-height:100vh;
+            background-color: rgb(204, 223, 238);
+            z-index: -1;
+            
         }
         .main {
             font-family: 'Josefin Sans', sans-serif;
         }
         .page {
-            padding-top: 70px;
-            padding-bottom: 240px;
-            padding-left: 30px;
-            padding-right: 10px;
+            margin:20px;
+            padding:30px;
+            height:100%;
+            z-index: 2;
         }
 #body{
 width: calc( 100% - 60px );
-height: fit-content;
+z-index: -1;
+height: 100%;
 background-color: rgb(204, 223, 238);
 color: rgb(35, 48, 56);
 padding: 10px;
@@ -45,7 +50,7 @@ transition: width  1s;
 
 #body2{
     width: 100%;
-    height: fit-content;
+    height: 100%;
     background-color: rgb(204, 223, 238);
     color: rgb(35, 48, 56);
     padding: 10px;
@@ -56,11 +61,12 @@ transition: width  1s;
     right:0px;
     top:0px;
     transition:  width  0.9s;
+    z-index: -1;
     }
 .navright, .uppernav {
             float:left;
             background-color:#FF604E;
-                z-index:2;
+                z-index:4;
             }
             .uppernav {
             width: calc(100vw - 60px);
@@ -74,7 +80,7 @@ transition: width  1s;
             float:left;
             left: 60px;
             top: 0px;
-            z-index: 2;
+            z-index: 4;
 }
     .gg-bell {
     width: 14px;
@@ -90,7 +96,8 @@ transition: width  1s;
     top:22px;
     right:50px;
 }
-.navright ul {
+        
+#demo {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -103,6 +110,7 @@ transition: width  1s;
   left: 0px;
   top: 60px;
 }
+
 
 #button{ 
     width: 60px;
@@ -117,7 +125,7 @@ position: fixed;
   
 }
 
-.navright li a {
+.navul a {
   display: block;
   color: #000;
 padding: 5px;
@@ -128,11 +136,12 @@ text-align:center;
   text-decoration: none;
 }
 
-.navright li a:hover {
+
+.navul a:hover {
   background-color: #D14839;
   color: white;
 }
-.navright li a{
+.navul a{
   background-color: #CF5D50;
   margin-left: auto;
   margin-right: auto;
@@ -176,7 +185,6 @@ text-align:center;
         font-family: 'Josefin Sans', sans-serif;
         }
         .subjcontents ul li a{
-        color: rgb(196, 52, 52);
         font-size: 20px;
         }
         .logo {
@@ -189,44 +197,34 @@ text-align:center;
                 padding-left:20px;
                 width:fit-content;
             }
-        .navright li  :hover:after{
+        
+ .navul :hover:after{
  transform: scaley(1);
    transform-origin: bottom left;
    background-color: #D14839;
  }
 
-.Home a :after {
-   content: 'HOMEPAGE' ;
-   background-color:#D14839;
-   font-family: 'Josefin Sans', sans-serif;
-   padding: 5px;
-   padding-top: 15px;
-   position: absolute;
-   font-size: 20px;
-   top: 0px;
-   left:60px;
-   transform: scaleX(0);
-   height: fit-content;
-   width: 125px;
-   transform-origin: top left;
-   transition: 0.4s ease-out;
- }
 
+ #button:hover{
+    background-color:#D14839;
+    color: white;  
+ }
  .Home :after {
    content: 'HOMEPAGE' ;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 0px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width:125px;
    transform-origin: top left;
    transition: 0.4s ease-out;
+     z-index:2;
  }
  
  .Quiz  :after {
@@ -234,16 +232,17 @@ text-align:center;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 50px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width: 120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
+     z-index:2;
  }
 
  .Author  :after {
@@ -251,16 +250,17 @@ text-align:center;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 100px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width: 120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
+     z-index:2;
  }
 
  .Grade  :after {
@@ -268,17 +268,68 @@ text-align:center;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 150px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width:120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
+     z-index:2;
  }
+        .page {
+            background-color:#eef5f9;
+            padding:10px;
+        }
+        .subjheader {
+            text-align:center;
+            padding:20px;
+        }
+        .subjcontent {
+         padding:20px;   
+        }
+        .quizz {
+        color:rgb(42, 157, 143);
+            width:fit-content;
+        }
+        .quizz a {
+         text-decoration:none;   
+         color:rgb(35, 48, 56);
+         
+        }
+.quizz a:hover {
+         text-decoration:underline;
+     color:rgb(42, 157, 143);;
+ 
+        }
+        #activities {
+         list-style-type:none;   
+        }
+   
+    #modules {
+        list-style-type:none;
+        margin-bottom:50px;
+        }
+        .module {
+         padding-top:20px;
+         font-size: 20px;
+        }
+
+        .module {
+         padding-top:20px;
+         font-size: 20px;
+        }
+
+        .book {
+         height:100%;
+         color:rgb(211,74,40);
+         float: left;
+        }
+
+       
     </style>
     <script>
         let x=0;
@@ -313,10 +364,10 @@ text-align:center;
     <nav class="navright">
         <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
         <ul id="demo">
-                <li class="Home" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
-                <li class="Quiz"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
-                <li class="Author"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
-                <li class="Grade"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz page + navbar/gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+                <li class="Home navul" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+                <li class="Quiz navul"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
+                <li class="Author navul"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
+                <li class="Grade navul"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz page + navbar/gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
             </ul>
         <header class="uppernav">
             <div class="logo">
@@ -331,24 +382,24 @@ text-align:center;
     <main class="page">
         <div class="subjheader"> 
             <h1> 
-                English 3 - Balingkilat
+                Computer Science 3 - Balingkilat
             </h1>
         </div>
         <div class="subjcontents">
+            <h4> Modules</h4>
+            <hr>
+            <ul id="modules">
+                <li class="module"> <i class="material-icons book">book</i>LG 1.0 How to Read... </li>
+                <li class="module"> <i class="material-icons book">book</i>LG 1.1 How to Write...  </li>
+            </ul>
+            <hr>
             <h4> Activities</h4>
             <hr>
             <ul id="activities">
-                <li> <a href="#"> Quiz </a> </li>
+                <li class="quizz"> No activities yet... </li>
             </ul>
             <hr>
-            <h4> References </h4>
-            <hr>
-            <ul id="references">
-                <li> <a href="#"> Reference One </a> </li>
-                <li> <a href="#"> Reference Two </a> </li>
-                <li> <a href="#"> Reference Three </a> </li>
-            </ul>
-            <hr>
+            
         </div>
     </main>
     </div>
