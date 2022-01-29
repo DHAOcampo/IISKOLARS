@@ -20,6 +20,9 @@
         body {
             margin:0px;
             min-height:100vh;
+            background-color: rgb(204, 223, 238);
+            z-index: -1;
+            
         }
         .main {
             font-family: 'Josefin Sans', sans-serif;
@@ -28,9 +31,11 @@
             margin:20px;
             padding:30px;
             height:100%;
+            z-index: 2;
         }
 #body{
 width: calc( 100% - 60px );
+z-index: -1;
 height: 100%;
 background-color: rgb(204, 223, 238);
 color: rgb(35, 48, 56);
@@ -56,11 +61,12 @@ transition: width  1s;
     right:0px;
     top:0px;
     transition:  width  0.9s;
+    z-index: -1;
     }
 .navright, .uppernav {
             float:left;
             background-color:#FF604E;
-                z-index:2;
+                z-index:4;
             }
             .uppernav {
             width: calc(100vw - 60px);
@@ -74,7 +80,7 @@ transition: width  1s;
             float:left;
             left: 60px;
             top: 0px;
-            z-index: 2;
+            z-index: 4;
 }
     .gg-bell {
     width: 14px;
@@ -104,6 +110,7 @@ transition: width  1s;
   left: 0px;
   top: 60px;
 }
+
 
 #button{ 
     width: 60px;
@@ -178,7 +185,6 @@ text-align:center;
         font-family: 'Josefin Sans', sans-serif;
         }
         .subjcontents ul li a{
-        color: rgb(196, 52, 52);
         font-size: 20px;
         }
         .logo {
@@ -198,36 +204,23 @@ text-align:center;
    background-color: #D14839;
  }
 
-.Home a :after {
-   content: 'HOMEPAGE' ;
-   background-color:#D14839;
-   font-family: 'Josefin Sans', sans-serif;
-   padding: 5px;
-   padding-top: 15px;
-   position: absolute;
-   font-size: 20px;
-   top: 0px;
-   left:60px;
-   transform: scaleX(0);
-   height: fit-content;
-   width: 125px;
-   transform-origin: top left;
-   transition: 0.4s ease-out;
-   
- }
 
+ #button:hover{
+    background-color:#D14839;
+    color: white;  
+ }
  .Home :after {
    content: 'HOMEPAGE' ;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 0px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width:125px;
    transform-origin: top left;
    transition: 0.4s ease-out;
@@ -239,13 +232,13 @@ text-align:center;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 50px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width: 120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
@@ -257,13 +250,13 @@ text-align:center;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 100px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width: 120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
@@ -275,20 +268,20 @@ text-align:center;
    background-color:#D14839;
    font-family: 'Josefin Sans', sans-serif;
    padding: 5px;
-   padding-top: 15px;
+   padding-top: 10px;
    position: absolute;
    font-size: 20px;
    top: 150px;
    left:60px;
    transform: scaleX(0);
-   height: fit-content;
+   height: 50px;
    width:120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
      z-index:2;
  }
         .page {
-            background-color:rgb(255,255,242);
+            background-color:#eef5f9;
             padding:10px;
         }
         .subjheader {
@@ -304,11 +297,12 @@ text-align:center;
         }
         .quizz a {
          text-decoration:none;   
-         color:inherit;
+         color:rgb(35, 48, 56);
+         
         }
-        .quizz a:hover {
+.quizz a:hover {
          text-decoration:underline;
-            color:red;
+     color:rgb(42, 157, 143);;
  
         }
         #activities {
@@ -317,7 +311,7 @@ text-align:center;
         .assignm {
         height:100%;
             color:rgb(42, 157, 143);
-            padding-top:8px;
+            float: left;
         }
     #modules {
         list-style-type:none;
@@ -325,11 +319,21 @@ text-align:center;
         }
         .module {
          padding-top:20px;
+         font-size: 20px;
         }
+
+        .module {
+         padding-top:20px;
+         font-size: 20px;
+        }
+
         .book {
          height:100%;
          color:rgb(211,74,40);
+         float: left;
         }
+
+       
     </style>
     <script>
         let x=0;
@@ -387,16 +391,17 @@ text-align:center;
         </div>
         <div class="subjcontents">
             <h4> Modules</h4>
+            <hr>
             <ul id="modules">
-                <li class="module"> <i class="material-icons book">book</i><h4>LG 1.0 How to Code </h4> </li>
-                <li class="module"> <i class="material-icons book">book</i><h4>LG 1.1 How to Debug </h4> </li>
-                <li class="module"> <i class="material-icons book">book</i><h4>LG 1.2 Hacking Tips </h4> </li>
+                <li class="module"> <i class="material-icons book">book</i>LG 1.0 How to Code </li>
+                <li class="module"> <i class="material-icons book">book</i>LG 1.1 How to Debug  </li>
+                <li class="module"> <i class="material-icons book">book</i>LG 1.2 Hacking Tips </li>
             </ul>
             <hr>
             <h4> Activities</h4>
             <hr>
             <ul id="activities">
-                <li class="quizz"> <i class="material-icons assignm">assignment</i> <a href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"> COMSci 1Q Quiz 1 </a> </li>
+                <li class="quizz"> <i class="material-icons assignm">assignment</i> <a href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html">COMSci 1Q Quiz 1</a> </li>
             </ul>
             <hr>
             
