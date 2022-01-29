@@ -44,6 +44,7 @@ position: absolute;
 right:0px;
 top:0px;
 transition: width  1s;
+
 }
 
 #body2{
@@ -59,6 +60,7 @@ transition: width  1s;
     right:0px;
     top:0px;
     transition:  width  0.9s;
+   
     }
 .navright, .uppernav {
             float:left;
@@ -77,7 +79,7 @@ transition: width  1s;
             float:left;
             left: 60px;
             top: 0px;
-            z-index: 4;
+            z-index: 2;
 }
     .gg-bell {
     width: 14px;
@@ -199,6 +201,7 @@ text-align:center;
  transform: scaley(1);
    transform-origin: bottom left;
    background-color: #D14839;
+   z-index:5;
  }
 
 
@@ -275,7 +278,7 @@ text-align:center;
    width:120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
-     z-index:2;
+     z-index:2 ;
  }
         .page {
             background-color:#eef5f9;
@@ -363,6 +366,32 @@ text-align:center;
 </head>
 
 <body class="main">
+    <div id="body">
+        <main class="page">
+            <div class="subjheader"> 
+                <h1> 
+                    Computer Science 3 - Balingkilat
+                </h1>
+            </div>
+            <div class="subjcontents">
+                <h4> Modules</h4>
+                <hr>
+                <ul id="modules">
+                    <li class="module"> <i class="material-icons book">book</i><span>LG 1.0 How to Code</span> </li>
+                    <li class="module"> <i class="material-icons book">book</i><span>LG 1.1 How to Debug </span> </li>
+                    <li class="module"> <i class="material-icons book">book</i><span>LG 1.2 Hacking Tips </span> </li>
+                </ul>
+                <hr>
+                <h4> Activities</h4>
+                <hr>
+                <ul id="activities">
+                     <li class="quizz"><i class="material-icons assignm">assignment</i> <a href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html">COMSci 1Q Quiz 1</a> (Click Navbar for Quiz Page)</li>
+                </ul>
+                <hr>
+                
+            </div>
+        </main>
+        </div>
     <nav class="navright">
         <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
         <ul id="demo">
@@ -380,32 +409,7 @@ text-align:center;
         </header>
     </nav>
     
-    <div id="body">
-    <main class="page">
-        <div class="subjheader"> 
-            <h1> 
-                Computer Science 3 - Balingkilat
-            </h1>
-        </div>
-        <div class="subjcontents">
-            <h4> Modules</h4>
-            <hr>
-            <ul id="modules">
-                <li class="module"> <i class="material-icons book">book</i><span>LG 1.0 How to Code</span> </li>
-                <li class="module"> <i class="material-icons book">book</i><span>LG 1.1 How to Debug </span> </li>
-                <li class="module"> <i class="material-icons book">book</i><span>LG 1.2 Hacking Tips </span> </li>
-            </ul>
-            <hr>
-            <h4> Activities</h4>
-            <hr>
-            <ul id="activities">
-                 <li class="quizz"><i class="material-icons assignm">assignment</i> <a href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html">COMSci 1Q Quiz 1</a> (Click Navbar for Quiz Page)</li>
-            </ul>
-            <hr>
-            
-        </div>
-    </main>
-    </div>
+    
 </body>
 
 </html>
