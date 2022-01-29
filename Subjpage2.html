@@ -21,7 +21,6 @@
             margin:0px;
             min-height:100vh;
             background-color: rgb(204, 223, 238);
-            z-index: -1;
             
         }
         .main {
@@ -31,11 +30,10 @@
             margin:20px;
             padding:30px;
             height:100%;
-            z-index: 2!important;
+            z-index: 4!important;
         }
 #body{
 width: calc( 100% - 60px );
-z-index: -1;
 height: 100%;
 background-color: rgb(204, 223, 238);
 color: rgb(35, 48, 56);
@@ -46,6 +44,7 @@ position: absolute;
 right:0px;
 top:0px;
 transition: width  1s;
+
 }
 
 #body2{
@@ -61,7 +60,7 @@ transition: width  1s;
     right:0px;
     top:0px;
     transition:  width  0.9s;
-    z-index: -1;
+   
     }
 .navright, .uppernav {
             float:left;
@@ -80,7 +79,7 @@ transition: width  1s;
             float:left;
             left: 60px;
             top: 0px;
-            z-index: 4;
+            z-index: 2;
 }
     .gg-bell {
     width: 14px;
@@ -202,6 +201,7 @@ text-align:center;
  transform: scaley(1);
    transform-origin: bottom left;
    background-color: #D14839;
+   z-index:5;
  }
 
 
@@ -278,7 +278,7 @@ text-align:center;
    width:120px;
    transform-origin: top left;
    transition: 0.4s ease-out;
-     z-index:2;
+     z-index:2 ;
  }
         .page {
             background-color:#eef5f9;
@@ -306,9 +306,14 @@ text-align:center;
  
         }
         #activities {
-         list-style-type:none;   
+         list-style-type:none;
+            z-index:2;
         }
-   
+        .assignm {
+        height:100%;
+            color:rgb(42, 157, 143);
+            float: left;
+        }
     #modules {
         list-style-type:none;
         margin-bottom:50px;
@@ -361,6 +366,31 @@ text-align:center;
 </head>
 
 <body class="main">
+    <div id="body">
+        <main class="page">
+            <div class="subjheader"> 
+                <h1> 
+                    English 3 - Balingkilat
+                </h1>
+            </div>
+            <div class="subjcontents">
+                <h4> Modules</h4>
+                <hr>
+                <ul id="modules">
+                    <li class="module"> <i class="material-icons book">book</i><span>LG 1.0 How to Read...</span> </li>
+                    <li class="module"> <i class="material-icons book">book</i><span>LG 1.1 How to Write... </span> </li>
+                </ul>
+                <hr>
+                <h4> Activities</h4>
+                <hr>
+                <ul id="activities">
+                     <li class="quizz">No Activities yet...</li>
+                </ul>
+                <hr>
+                
+            </div>
+        </main>
+        </div>
     <nav class="navright">
         <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
         <ul id="demo">
@@ -378,31 +408,7 @@ text-align:center;
         </header>
     </nav>
     
-    <div id="body">
-    <main class="page">
-        <div class="subjheader"> 
-            <h1> 
-                English 3 - Balingkilat
-            </h1>
-        </div>
-        <div class="subjcontents">
-            <h4> Modules</h4>
-            <hr>
-            <ul id="modules">
-                <li class="module"> <i class="material-icons book">book</i>LG 1.0 How to Read... </li>
-                <li class="module"> <i class="material-icons book">book</i>LG 1.1 How to Write...  </li>
-            </ul>
-            <hr>
-            <h4> Activities</h4>
-            <hr>
-            <ul id="activities">
-                <li class="quizz"> No activities yet... </li>
-            </ul>
-            <hr>
-            
-        </div>
-    </main>
-    </div>
+    
 </body>
 
 </html>
