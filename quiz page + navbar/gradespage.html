@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>IISKOLARSQuizPage</title>
+  <title>IISKOLARS Grade</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -19,7 +20,108 @@
     <script  src="count0.js"></script>
 
 <style>
+.navright, .uppernav {
+  float:left;
+  background-color:#FF604E;
+      z-index:9;
+  }
+  .uppernav {
+  width: calc(100vw - 60px);
+  height: 60px;
+  position: sticky;
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  float: left;
+  position: fixed;
+  float:left;
+  left: 60px;
+  top: 0px;
+  z-index: 2;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: block;
+width: 60px;
+height: calc(100vh);
+background-color:#D65344;
+position: fixed;
+float:left;
+left: 0px;
+top: 60px;
+}
 
+#button{ 
+width: 60px;
+height: 60px;
+float:left;
+position: fixed;
+left:0px;
+top:0px;
+float:left;
+background-color: #CF5D50;
+border:none;
+
+}
+
+li a {
+display: block;
+color: #000;
+padding: 5px;
+padding-top: 15px;
+padding-bottom: 0px;
+height: 35px;
+text-align:center;
+text-decoration: none;
+}
+
+
+li a:hover {
+background-color: #555;
+color: white;
+}
+a{
+background-color: gray;
+margin-left: auto;
+margin-right: auto;
+}
+
+.menu{
+width: 60%;
+height: 60%;
+}
+.transition1{
+animation: fadeIn1 1s;
+-webkit-animation: fadeIn1 1s;  
+transform: scaleX(0);
+transform-origin:left;
+}
+@keyframes fadeIn1{
+from{
+transform: scaleX(1);
+}
+to{
+transform:scaleX(0);
+}
+}
+
+.transition2{
+animation: fadeIn2 1s; 
+-webkit-animation: fadeIn2 1s;  ;
+transform: scaleX(1);
+transform-origin:left;
+}
+
+@keyframes fadeIn2{
+from{
+transform: scaleX(0);
+}
+to{
+transform:scaleX(1);
+}
+}
   body{
     margin: 0cm;
     color:#212529 ;
@@ -37,6 +139,7 @@
   float: right;
   margin-top:  30px; 
   border:none;
+  
 }
 
 #body{
@@ -68,21 +171,51 @@ right:0px;
 top:0px;
     transition:  width  0.9s;
     }
+    nav {
+  background-color:#FF604E;
+  width:100%;
+  position:fixed;
+  top:0;
+}
 
-.quizhead{
+.logo {
+  height:70px;
+}
+.logoimage {
+  height:65px;
+}
+.logo {
+  padding-left:20px;
+  width:fit-content;
+}
+.gg-bell {
+  width: 14px;
+  height: 14px;
+  position:absolute;
+  top:25px;
+  right:94px;
+}
+.chat {
+  width: 14px;
+  height: 14px;
+  position:absolute;
+  top:22px;
+  right:50px;
+}
+.gradehead{
   padding:10px;
   width: auto;
   height: auto;
   background-color: #eef5f9;
-  border-top: rgb(38, 70, 83) solid 2px;
+  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
 }
-#quizfooter{
+#gradefooter{
   padding:10px;
   width: auto;
   height: auto;
   background-color: #eef5f9;
-  border-top: rgb(38, 70, 83) solid 2px;
+  border-top: #FF604E solid 2px;
   margin-bottom: 20px;
 }
 
@@ -94,157 +227,17 @@ table{
 
 td{
   width: 16.66%;
-  font-size: 1.7vw;
   text-align: center;
 }
 
 th{
-  background-color: rgb(38, 70, 83);
-  color: white;
+  background-color: rgb(214, 226, 255);
   font-size: 1.7vw;
   padding: 5px;
   border-left: none;
   border-right: none;
   border-top: 1px solid black;
   border-bottom:1px solid black;
-}
-
-.Home a :after {
-  content: 'HOMEPAGE' ;
-  background-color:rgb(38, 60, 69);
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 5px;
-  padding-top: 15px;
-  position: absolute;
-  font-size: 20px;
-  top: 0px;
-  left:60px;
-  transform: scaleX(0);
-  height: 30px;
-  width: 120px;;
-  transform-origin: top left;
-  transition: 0.4s ease-out;
-}
-
-.Home :after {
-  content: 'HOMEPAGE' ;
-  background-color: rgb(38, 60, 69);
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 5px;
-  padding-top: 15px;
-  position: absolute;
-  font-size: 20px;
-  top: 0px;
-  left:60px;
-  transform: scaleX(0);
-  height: 30px;
-  width: 120px;;
-  transform-origin: top left;
-  transition: 0.4s ease-out;
-}
-
-.Quiz  :after {
-  content: 'QUIZ' ;
-  background-color: rgb(38, 60, 69);
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 5px;
-  padding-top: 15px;
-  position: absolute;
-  font-size: 20px;
-  top: 50px;
-  left:60px;
-  transform: scaleX(0);
-  height: 30px;
-  width: 120px;;
-  transform-origin: top left;
-  transition: 0.4s ease-out;
-}
-
-.Author  :after {
-  content: "ABOUT US" ;
-  background-color: rgb(38, 60, 69);
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 5px;
-  padding-top: 15px;
-  position: absolute;
-  font-size: 20px;
-  top: 100px;
-  left:60px;
-  transform: scaleX(0);
-  height: 30px;
-  width: 120px;;
-  transform-origin: top left;
-  transition: 0.4s ease-out;
-}
-
-.Grade  :after {
-  content: "GRADES" ;
-  background-color: rgb(24, 49, 58);
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 5px;
-  padding-top: 15px;
-  position: absolute;
-  font-size: 20px;
-  top: 150px;
-  left:60px;
-  transform: scaleX(0);
-  height: 30px;
-  width: 120px;;
-  transform-origin: top left;
-  transition: 0.4s ease-out;
-}
-
-li  :hover:after{
-transform: scaley(1);
-  transform-origin: bottom left;
-  background-color: rgb(17, 53, 57);
-}
-.navright, .uppernav {
-  float:left;
-  background-color:rgb(38, 70, 83);
-      z-index:2;
-}
-
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-display: block;
-width: 60px;
-height: calc(100vh - 60px);
-background-color:rgb(38, 70, 83);
-position: fixed;
-float:left;
-left: 0px;
-top: 60px;
-}
-
-#button{ 
-width: 60px;
-height: 60px;
-float:left;
-position: fixed;
-left:0px;
-top:0px;
-float:left;
-background-color: rgb(38, 60, 69);
-border:none;
-}
-
-#button:hover{ 
-background-color:rgb(17, 53, 57);
-color: white;
-}
-
-li a:hover {
-background-color: rgb(17, 53, 57);
-color: white;
-}
-
-a{
-background-color:rgb(38, 60, 69);
-margin-left: auto;
-margin-right: auto;
 }
 </style>
 
@@ -281,30 +274,31 @@ let y=0;
   <nav class="navright">
     <button id="button" type="button" onclick="myFunction()"><i class="material-icons dehaze">dehaze</i></button>
     <ul id="demo">
-        <li class="Home" ><a  href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
-        <li class="Quiz"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/index.html"><i class="material-icons menu">search</i></a></li>
-        <li class="Author"><a  href=https://dhaocampo.github.io/IISKOLARS/AuthorPage/AuthorPage.html><i class="material-icons menu">info</i></a></li>
-        <li class="Grade"><a  href="https://dhaocampo.github.io/IISKOLARS/quiz%20page%20+%20navbar/gradespage.html"><i class="fa fa-graduation-cap"></i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/IISKOLARSHomepage.html"><i class="material-icons menu">home</i></a></li>
+        <li><a href="#news"><i class="material-icons menu">search</i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/AuthPage.html"><i class="material-icons menu">info</i></a></li>
+        <li><a href="https://dhaocampo.github.io/IISKOLARS/GradesPage.html"><i class="fa fa-graduation-cap"></i></a></li>
     </ul>
     <header class="uppernav">
         <div class="logo">
-            <img class="logoimage" alt="logo" src="https://dhaocampo.github.io/IISKOLARS/logoiiskolars.png">
+            <img class="logoimage" alt="logo" src="logoiiskolars.png">
         </div>
         <i class="gg-bell"></i>
         <i class="material-icons chat">chat_bubble_outline</i>
     </header>
 </nav>
 
+
 <div id="body">
-  <div class="quizhead">
-<h1>COM Sci</h1>
-Common Opinions and Mannuerisms science
+  <div class="gradehead">
+<h1>Computer Sci</h1>
+You are currently viewing your grades on this subject.
   </div>
   
   
 
-  <div id="quizfooter">
-<h2>User report - You</h2>
+  <div id="gradefooter">
+<h2>User Report</h2>
     <table>
       <tr>
         <th>
@@ -328,7 +322,7 @@ Common Opinions and Mannuerisms science
       </tr>
       <tr>
           <td>
-            1Q Quiz 1 
+             FA 5
           </td>
             <td>
                 <p id="demo2">
@@ -351,8 +345,8 @@ Common Opinions and Mannuerisms science
         <td>
             100%
         </td>
-       
       </tr>
+
     </table>
     <script>
         var z = localStorage.getItem("z");
@@ -382,5 +376,3 @@ Common Opinions and Mannuerisms science
 </body>
 
 </html>
-
-
